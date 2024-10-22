@@ -1,10 +1,10 @@
 ### Overview
 
-- **`TCM.py`**: This script contains the complete implementation of the TCM (Tensor Confusion Matrix) for immediate use.
-- **`Experiments`**: This directory includes all Python scripts used for the experimental setups and evaluations.
+- **`TCM.py`**: This script provides the full implementation of the Tensor Confusion Matrix (TCM) for immediate use.
+- **`Experiments`**: This folder contains all the Python scripts required to reproduce the experimental setups and evaluations.
 
 ### Data and Model Weights
 
-Due to restrictions, neither the dataset nor the pre-trained model weights are included in this repository. However, the dataset is publicly available online, and users can easily retrieve it by following the appropriate links.
+The datasets are not included in this repository due to licensing restrictions. However, the datasets are publicly available online, and users can easily retrieve them.
 
-Given the large size of the model weights, we recommend that users retrain the model from scratch to fully replicate the experiments.
+Similarly, the trained model weights are not provided due to their large size. We recommend retraining the model from scratch to replicate the experiments.
