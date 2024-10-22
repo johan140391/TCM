@@ -88,21 +88,6 @@ class images_model(nn.Module):
         else:
             return output
 
-class MyCustomLoss(nn.Module):
-    def __init__(self, weights, device):
-        super(MyCustomLoss, self).__init__()
-        self.weights = weights.to(device)
-        self.relu = nn.ReLU()
-
-    def forward(self, input, target):
-        positives = torch.zeros_like(target)
-        positives[target>0]=1.
-        loss = (self.relu(input) - target).pow(2) * positives*self.weights
-        return loss.mean()
-
-    def __call__(self, input, target):
-        return self.forward(input, target)
-
 
 def train(train_loader, model, criterion, optim, epoch, device):
     epoch_loss = 0
